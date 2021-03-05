@@ -14,3 +14,4 @@ pipeline {
     myenv2 = 'val2'
   }
 }
+
