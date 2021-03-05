@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'This is building phase'
+        echo 'This is Jenkinsfile from development branch'
         sh 'python3 my.py'
       }
     }
@@ -14,3 +14,4 @@ pipeline {
     myenv2 = 'val2'
   }
 }
+
