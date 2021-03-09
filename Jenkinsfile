@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'This is Jenkinsfile from development branch'
-        sh 'python my.py'
+        bat 'python my.py'
       }
     }
 
