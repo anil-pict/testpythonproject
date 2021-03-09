@@ -9,7 +9,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'This is Jenkinsfile from development branch'
-        bat 'C:\\Tools\\Python392\\python.exe my.py'
+        bat 'SET Path=%PATH%;C:\\Tools\\Python392;'
+        bat 'python my.py'
       }
     }
 
