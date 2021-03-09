@@ -18,5 +18,6 @@ pipeline {
   environment {
     myenv1 = 'val1'
     myenv2 = 'val2'
+    python = 'C:\\Tools\\Python392\\python'
   }
 }
