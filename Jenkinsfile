@@ -9,6 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'This is Jenkinsfile from development branch'
+        echo '%PATH%'
         bat 'python my.py'
       }
     }
@@ -17,6 +18,5 @@ pipeline {
   environment {
     myenv1 = 'val1'
     myenv2 = 'val2'
-    Path = 'C:\\Tools\\Python392\\'
   }
 }
