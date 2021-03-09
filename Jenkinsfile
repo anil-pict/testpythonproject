@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'windows_slave_agent'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
@@ -14,4 +19,3 @@ pipeline {
     myenv2 = 'val2'
   }
 }
-
